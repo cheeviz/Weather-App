@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply p-0 m-0 box-border;
+}
+
+.app {
+  @apply bg-dia bg-cover bg-bottom transition-all;
+}
+
+.app.warm {
+  @apply bg-noite
+}
+
+main {
+  @apply min-h-screen p-6;
+}
+
+.search-box {
+  @apply w-full mb-20;
+}
+
+.search-box .search-bar {
+  @apply block w-full p-4 appearance-none border-none outline-none rounded-br-2xl rounded-bl-2xl -mt-6;
+}
+
+.location-box .location {
+  @apply text-white text-3xl font-medium text-center shadow-2xl;
+}
+
+.location-box .date {
+  @apply text-white text-xl font-normal text-center shadow-xl;
+}
+
+.weather-box {
+  @apply text-center;
+}
+
+.weather-box .temp {
+  @apply relative inline-block m-8 p-4 pt-6 bg-[#303030] bg-opacity-40 rounded-3xl text-white font-bold text-[102px] shadow-2xl text-center;
+}
+
+.weather-box .weather {
+    @apply text-white font-bold text-3xl uppercase text-center
+}
