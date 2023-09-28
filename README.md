@@ -15,7 +15,7 @@ Certifique-se de que você esteja dentro do diretório do projeto e execute o se
 npm install
 ```
 
-#2. Crie um arquivo `.env` na raiz do projeto:
+# 2. Crie um arquivo `.env` na raiz do projeto:
 ```env
 VITE_API_KEY=SUA_CHAVE_DA_API_DO_OPENWEATHER
 ```
