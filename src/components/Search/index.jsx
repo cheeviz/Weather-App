@@ -1,14 +1,14 @@
 import { useState } from "react";
 import * as S from "./styles";
 
-export function Search({ performSearch, weather }) {
+export function Search({ handleSearch, error }) {
   const [inputValue, setInputValue] = useState("");
 
   const handleChangeInput = async (e) => {
     setInputValue(e.target.value);
 
     if (e.key === "Enter") {
-      await performSearch(inputValue);
+      await handleSearch(inputValue);
       setInputValue("");
     }
   };
@@ -23,11 +23,7 @@ export function Search({ performSearch, weather }) {
         onKeyDown={handleChangeInput}
       />
 
-      {weather.cod === "404" ? (
-        <S.Paragrafo>
-          Cidade Não Encontrada
-        </S.Paragrafo>
-      ) : null}
+      {error ? <S.Paragrafo>Cidade Não Encontrada</S.Paragrafo> : null}
     </S.Container>
   );
 }

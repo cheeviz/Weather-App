@@ -8,9 +8,9 @@ export const WeatherTitleBox = tw.div`flex flex-col items-center justify-center 
 export const CidadeTitle = tw.h1`text-3xl font-bold`
 export const DateNow = tw.p`text-xl`
 
-export const WeatherClimate = tw.div`flex flex-col items-center justify-center mt-5`
-export const WeatherInfoBox = tw.div`flex items-center text-4xl`
-export const Icon = tw.img`w-20`
+export const WeatherClimate = tw.div`flex flex-col items-center justify-center mt-5 gap-5`
+export const WeatherInfoBox = tw.div`flex flex-col items-center text-4xl drop-shadow-2xl`
+export const Icon = tw.img`w-32`
 export const Paragrafo = tw.p`font-bold`
 
 export const WeatherInformation = tw.div`flex gap-5`
